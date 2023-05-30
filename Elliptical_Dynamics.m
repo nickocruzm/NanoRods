@@ -115,13 +115,13 @@ for r=1:R
 end
 
 
-% %Calcuate the velocities of each rod
-% for k=1:R
-%     total_distance = z_rod(k,end);
-%     velocity_matrix(k) = calc_velocity(total_distance, N);
-% end
-% 
-% avg_velocity = calc_avg_velocity(R,velocity_matrix);
+%Calcuate the velocities of each rod
+for k=1:R
+    total_distance = z_rod(k,end);
+    velocity_matrix(k) = calc_velocity(total_distance, N);
+end
+
+avg_velocity = calc_avg_velocity(R,velocity_matrix);
 
 maxz=max(z_rod,[],"all");
 h_z = 1;
@@ -135,8 +135,8 @@ for it=2:N/frame_frequency
 
     for r=1:R
         % calculating density, 
-        for z_body = (z_rod(it,r)-length_of_rod):h_z:(z_rod(it,r)+length_of_rod) 
-            if (z_rod(it,r)>0)
+        for z_body = (z_rod(r,it)-length_of_rod):h_z:(z_rod(r,it)+length_of_rod) 
+            if (z_rod(r,it)>0)
                 z_index = int16(z_body/h_z)+1;
                 if (z_index<z_resolution)&&(z_index>0)
                     z_pdf(z_index) = z_pdf(z_index) + 1.0;
@@ -145,18 +145,15 @@ for it=2:N/frame_frequency
         end
     end
     
-    
-    figure(1)
-    plot(1:1:z_resolution,z_pdf,'black'); hold on;
 
+    figure(1)
+    clf()
+    z_hist = h_z/2.0:h_z:(z_resolution*h_z);
+    plot(z_hist,z_pdf,'black'); hold on;
     xlabel("z");
-    %axis([0 maxz 0 max(z_pdf)]);
+    axis([0 maxz 0 max(z_pdf)+10]);
     ch=sprintf("Time %f",it*frame_frequency*Delta_t); 
     title(ch);
-%     ch=sprintf("%d.png",it);
-%     saveas(gcf,ch);
-   
-    
 end
 
 
@@ -168,6 +165,44 @@ end
 
 
 % FUNCTION DEFINITIONS
+
+function [] = mishas_histogram(z_rod,frame_frequency,Delta_t,N)
+
+    maxz=max(z_rod,[],"all");
+    h_z = 1;
+    z_resolution = int16(maxz/h_z)+1;
+    
+    for it=2:N/frame_frequency
+        
+        for k=1:z_resolution
+            z_pdf(k) = 0;  
+        end
+    
+        for r=1:R
+            % calculating density, 
+            for z_body = (z_rod(r,it)-length_of_rod):h_z:(z_rod(r,it)+length_of_rod) 
+                if (z_rod(r,it)>0)
+                    z_index = int16(z_body/h_z)+1;
+                    if (z_index<z_resolution)&&(z_index>0)
+                        z_pdf(z_index) = z_pdf(z_index) + 1.0;
+                    end
+                end
+            end
+        end
+        
+    
+        figure(1)
+        clf()
+        z_hist = h_z/2.0:h_z:(z_resolution*h_z);
+        plot(z_hist,z_pdf,'black'); hold on;
+        xlabel("z");
+        axis([0 maxz 0 max(z_pdf)+10]);
+        ch=sprintf("Time %f",it*frame_frequency*Delta_t); 
+        title(ch);
+    end
+    
+
+end
 
 function [] = Graphical_Simulation()
 

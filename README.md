@@ -72,7 +72,7 @@ Nanorod positions are approximated with **Euler's method**. The model's inputs a
 - ellipse radius in x, $r_a$
 - ellipse radius in y, $r_b$
 
-A random value $\alpha \in [0, 1]$ is generated, and the orientation angles are limited to
+A random value $\alpha \in [0, 1]$ is randomly generated, and the orientation angles are limited to
 
 $$0 \le \theta \le 2\pi, \qquad 0 \le \phi \le \frac{\pi}{2}$$
 

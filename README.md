@@ -23,7 +23,7 @@ The 3D channel is shown as two 2D views:
 
 The elliptical cross-section (xy-plane) shows how rods are spread over the channel surface. It is like looking down the inside of a tube.
 
-<img src="Fig01_channel_views.png" alt="Fig.1" width="400">
+<p align="center"><img src="Fig01_channel_views.png" alt="Fig.1" width="700"></p>
 
 *Fig. 01: End state of an E.D.S. run: XY (cross-section), XZ and YZ views of rod positions.*
 
@@ -33,7 +33,7 @@ The elliptical cross-section (xy-plane) shows how rods are spread over the chann
 
 Each curve counts the swimmers along the z-axis at one point in time. Over time, the flat (plateau) part of the profile gets longer and the point where concentration drops off moves farther up the channel. **The longer the rods migrate, the higher up the channel they build up.**
 
-![Fig.2](Fig02_concentration_profiles.png)
+<p align="center"><img src="Fig02_concentration_profiles.png" alt="Fig.2" width="550"></p>
 
 *Fig. 02: Concentration vs. z-position at several times.*
 
@@ -43,7 +43,7 @@ A profile shaped by exponential run times means **more rods travel farther upstr
 
 Figure 03 overlays a profile from a random walk with exponential run times on the E.D.S. profile. Both are min-max normalized. The two curves closely agree.
 
-![Fig.3](Fig03_random_walk_vs_EDS.png)
+<p align="center"><img src="Fig03_random_walk_vs_EDS.png" alt="Fig.3" width="550"></p>
 
 *Fig. 03: Normalized profiles: random walk (red) vs. elliptical dynamics (blue).*
 
@@ -51,7 +51,7 @@ Figure 03 overlays a profile from a random walk with exponential run times on th
 
 During upstream transport, rods gather in the **low-curvature regions** of the elliptical cross-section. The reason is still unclear and needs more study.
 
-![Fig.4](Fig04_curvature_distribution.png)
+<p align="center"><img src="Fig04_curvature_distribution.png" alt="Fig.4" width="600"></p>
 
 *Fig. 04: Rod distribution in low- vs. high-curvature regions of the cross-section, with x, y and z histograms.*
 

@@ -1,4 +1,5 @@
-![Page 01](01.png "page 1")
-![Page 02](02.png "page 2")
-![Page 03](03.png "page 3")
-![page 04](04.png "page 4")
+# Simulated Nanorods' behavior underflow
+
+In collaboration with Dr. Mykhailo Potomkin[^1], we used a 2D model to simulate the upstream migration of self-propelled nanorods in an elliptical channel and compared the resulting concentration profiles with those reported by [Figueroa-Morales et al.] [^2]. 
+[^1]: https://sites.google.com/view/mpotomkin
+[^2]: https://www.science.org/doi/10.1126/sciadv.aay0155

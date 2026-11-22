@@ -15,6 +15,7 @@ Main findings:
 ## Background
 
 Nanorods behave like micro-swimmers, which lets them move upstream against a flow. E.D.S. tracks where the rods build up, their contamination profiles, inside an elliptical channel.
+![Fig.1](Fig01_channel_views.png)
 
 The 3D channel is shown as two 2D views:
 
@@ -26,17 +27,19 @@ The elliptical cross-section (xy-plane) shows how rods are spread over the chann
 ## Results
 
 ### Concentration profiles over time (Fig. 02)
-
+![Fig.2](Fig02_concentration_profiles.png)
 Each curve counts the swimmers along the z-axis at one point in time. Over time, the flat (plateau) part of the profile gets longer and the point where concentration drops off moves farther up the channel. **The longer the rods migrate, the higher up the channel they build up.**
 
 A profile shaped by exponential run times means **more rods travel farther upstream** than with a power-law run-time distribution.
 
 ### Random walk vs. E.D.S. (Fig. 03)
+![Fig.3](Fig03_random_walk_vs_EDS.png)
 
 Figure 03 overlays a profile from a random walk with exponential run times on the E.D.S. profile. Both are min-max normalized. The two curves closely agree.
 
 ### Preference for low-curvature walls (Fig. 04)
 
+![Fig.4](Fig04_curvature_distribution.png)
 During upstream transport, rods gather in the **low-curvature regions** of the elliptical cross-section. The reason is still unclear and needs more study.
 
 ## Discussion

@@ -15,7 +15,6 @@ Main findings:
 ## Background
 
 Nanorods behave like micro-swimmers, which lets them move upstream against a flow. E.D.S. tracks where the rods build up, their contamination profiles, inside an elliptical channel.
-![Fig.1](Fig01_channel_views.png)
 
 The 3D channel is shown as two 2D views:
 
@@ -24,23 +23,37 @@ The 3D channel is shown as two 2D views:
 
 The elliptical cross-section (xy-plane) shows how rods are spread over the channel surface. It is like looking down the inside of a tube.
 
+<img src="Fig01_channel_views.png" alt="Fig.1" width="400">
+
+*Fig. 01: End state of an E.D.S. run: XY (cross-section), XZ and YZ views of rod positions.*
+
 ## Results
 
 ### Concentration profiles over time (Fig. 02)
-![Fig.2](Fig02_concentration_profiles.png)
+
 Each curve counts the swimmers along the z-axis at one point in time. Over time, the flat (plateau) part of the profile gets longer and the point where concentration drops off moves farther up the channel. **The longer the rods migrate, the higher up the channel they build up.**
+
+![Fig.2](Fig02_concentration_profiles.png)
+
+*Fig. 02: Concentration vs. z-position at several times.*
 
 A profile shaped by exponential run times means **more rods travel farther upstream** than with a power-law run-time distribution.
 
 ### Random walk vs. E.D.S. (Fig. 03)
-![Fig.3](Fig03_random_walk_vs_EDS.png)
 
 Figure 03 overlays a profile from a random walk with exponential run times on the E.D.S. profile. Both are min-max normalized. The two curves closely agree.
 
+![Fig.3](Fig03_random_walk_vs_EDS.png)
+
+*Fig. 03: Normalized profiles: random walk (red) vs. elliptical dynamics (blue).*
+
 ### Preference for low-curvature walls (Fig. 04)
 
-![Fig.4](Fig04_curvature_distribution.png)
 During upstream transport, rods gather in the **low-curvature regions** of the elliptical cross-section. The reason is still unclear and needs more study.
+
+![Fig.4](Fig04_curvature_distribution.png)
+
+*Fig. 04: Rod distribution in low- vs. high-curvature regions of the cross-section, with x, y and z histograms.*
 
 ## Discussion
 

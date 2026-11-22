@@ -1,10 +1,10 @@
 # Simulated Nanorods' Behavior Under Flow
 
-**Author:** Nicko Martinez, Interdisciplinary Center for Quantitative Modeling, UC Riverside
+
 
 ## Overview
 
-This project simulates nanorods swimming upstream in an elliptical channel. Its 2D model, the **Elliptical Dynamics Simulator (E.D.S.)**, produces concentration profiles of the rods along the channel. These profiles are compared with a **one-dimensional biased random walk**.
+Working alongside Dr. Mykhailo Potomkin[^1], we simulated nanorods swimming upstream in an elliptical channel. Its 2D model, the **Elliptical Dynamics Simulator (E.D.S.)**, produces concentration profiles of the rods along the channel. These profiles are compared with a **one-dimensional biased random walk**.
 
 Main findings:
 
@@ -82,3 +82,7 @@ $$\theta_n = F_{rate}\left(-\sin^2(\theta_{n-1})\cos(\phi_{n-1})\,\frac{2x_{n-1}
 | Fig. 02 | Concentration vs. z-position at several times |
 | Fig. 03 | Normalized profiles: random walk (red) vs. elliptical dynamics (blue) |
 | Fig. 04 | Rod distribution in low- vs. high-curvature regions of the cross-section, with x, y and z histograms |
+
+
+[^1]: https://sites.google.com/view/mpotomkin
+[^2]: https://www.science.org/doi/10.1126/sciadv.aay0155

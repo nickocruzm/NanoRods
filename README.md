@@ -57,7 +57,7 @@ During upstream transport, rods gather in the **low-curvature regions** of the e
 
 ## Discussion
 
-- **Contrast with the Super-Contamination article:** In that study, a *rectangular* channel produced profiles matching a biased random walk with a **power-law** run-time distribution. Here the elliptical channel matches an **exponential** distribution. The different channel shapes are thought to explain this.
+- **Contrast with the Super-Contamination article^[2]:** In that study, a *rectangular* channel produced profiles matching a biased random walk with a **power-law** run-time distribution. Here the elliptical channel matches an **exponential** distribution. The different channel shapes are thought to explain this.
 - **Advection can mimic a power law:** The biased random walk was run with both exponential and power-law run distributions. Even with exponential run times, long enough downstream advection distances made the walk *look* like a power-law distribution.
 - **Limitations:** Time limits left some observations without further evidence. Only Euler's method was used to integrate rod positions, and more accurate numerical methods might give better approximations.
 - **Future work:** Find out what controls the 1D random-walk distribution profiles, and why rods prefer low-curvature walls.
